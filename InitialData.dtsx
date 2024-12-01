@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-HVQR19C\oenea"
   DTS:DTSID="{743B2884-1C7D-4505-A865-8DEFF39B73E9}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="InitialData"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{08CB02E8-6E8B-4F43-8A50-444D27EAAC18}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{88C29132-066D-4B8E-896B-C728D42C80CE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,6 +24,16 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="C:\Users\oenea\Downloads\ETL\date_seed.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[date_seed.txt 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{5CDC26EC-22EA-4A77-A895-5EF602CD3A3C}"
+      DTS:ObjectName="date_seed.txt 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\gracj\datawarehouse-ETL\date_seed.txt" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -44,7 +54,7 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{5284DE0B-9D26-4B77-A9EA-6D2E13F9855A}"
           SQLTask:SqlStmtSourceType="FileConnection"
-          SQLTask:SqlStatementSource="date_seed.txt" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="date_seed.txt 1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -95,17 +105,17 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="157.333333333334,42.6666666666667"
+          Size="161,42"
           Id="Package\Seed dates table"
-          TopLeft="43.6249998789281,73.8499993142486" />
+          TopLeft="44.6249998789281,73.8499993142486" />
         <NodeLayout
-          Size="170.666666666667,42.6666666666667"
+          Size="155,43"
+          Id="Package\Seed Junk table"
+          TopLeft="506.12499399297,97.2999992793799" />
+        <NodeLayout
+          Size="171,43"
           Id="Package\Seed material table"
           TopLeft="228.124996600673,93.5999983263016" />
-        <NodeLayout
-          Size="154.666666666667,42.6666666666667"
-          Id="Package\Seed Junk table"
-          TopLeft="403.12499399297,68.2999992793799" />
       </GraphLayout>
     </LayoutInfo>
   </Package>

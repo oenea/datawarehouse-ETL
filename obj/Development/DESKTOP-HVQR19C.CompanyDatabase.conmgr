@@ -7,6 +7,6 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=DESKTOP-HVQR19C;Initial Catalog=CompanyDatabase;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{A517A84E-DA4E-4C1B-B442-E7219517A689}DESKTOP-HVQR19C.CompanyDatabase;" />
+      DTS:ConnectionString="Data Source=DESKTOP-MUDOC9U;Initial Catalog=CompanyDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{A517A84E-DA4E-4C1B-B442-E7219517A689}DESKTOP-HVQR19C.CompanyDatabase;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
