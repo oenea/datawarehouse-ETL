@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/25/2024 12:59:24 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-HVQR19C"
+  DTS:CreatorName="DESKTOP-HVQR19C\oenea"
+  DTS:DTSID="{743B2884-1C7D-4505-A865-8DEFF39B73E9}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="InitialData"
+  DTS:PackageType="5"
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{08CB02E8-6E8B-4F43-8A50-444D27EAAC18}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[date_seed.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{90BAC417-A105-4D8E-B257-727AAF07BB19}"
+      DTS:ObjectName="date_seed.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\oenea\Downloads\ETL\date_seed.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Seed dates table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E6560143-D01C-45DB-B4F4-E8F92E0D5837}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Seed dates table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{5284DE0B-9D26-4B77-A9EA-6D2E13F9855A}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="date_seed.txt" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Seed Junk table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{7600CAA4-1079-4052-9BDA-66EE8AEF64B3}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Seed Junk table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{5284DE0B-9D26-4B77-A9EA-6D2E13F9855A}"
+          SQLTask:SqlStatementSource="INSERT INTO Junk&#xA;             (status_, wasReturnedOnWarranty)&#xA;VALUES ('declined', 'yes'), ('declined', 'no'), ('accepted', 'yes'), ('accepted', 'no'), ('repaired', 'yes'), ('repaired', 'no')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Seed material table"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{DFD723C6-88BA-4A36-8827-16F947573EBA}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Seed material table"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{5284DE0B-9D26-4B77-A9EA-6D2E13F9855A}"
+          SQLTask:SqlStatementSource="INSERT INTO Material (material_type, material_name) VALUES &#xA;('Metal', 'Steel'),&#xA;('Metal', 'Aluminum'),&#xA;('Metal', 'Copper'),&#xA;('Wood', 'Pine'),&#xA;('Wood', 'Oak'),&#xA;('Wood', 'Teak'),&#xA;('Plastic', 'PVC'),&#xA;('Plastic', 'PE'),&#xA;('Plastic', 'PC')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="157.333333333334,42.6666666666667"
+          Id="Package\Seed dates table"
+          TopLeft="43.6249998789281,73.8499993142486" />
+        <NodeLayout
+          Size="170.666666666667,42.6666666666667"
+          Id="Package\Seed material table"
+          TopLeft="228.124996600673,93.5999983263016" />
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\Seed Junk table"
+          TopLeft="403.12499399297,68.2999992793799" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
