@@ -7,6 +7,6 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=DESKTOP-MUDOC9U;Initial Catalog=DataWarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-{5284DE0B-9D26-4B77-A9EA-6D2E13F9855A}DESKTOP-HVQR19C.DataWarehouse;" />
+      DTS:ConnectionString="Data Source=.\lab1;Initial Catalog=DataWarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-{5284DE0B-9D26-4B77-A9EA-6D2E13F9855A}DESKTOP-HVQR19C.DataWarehouse;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
