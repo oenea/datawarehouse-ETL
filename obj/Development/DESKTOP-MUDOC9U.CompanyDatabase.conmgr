@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-MUDOC9U.CompanyDatabase"
+  DTS:DTSID="{47BA5DAD-527B-45BB-A4DB-FF7A6B1880AF}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-MUDOC9U;Initial Catalog=CompanyDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-ETL-{47BA5DAD-527B-45BB-A4DB-FF7A6B1880AF}DESKTOP-MUDOC9U.CompanyDatabase;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
