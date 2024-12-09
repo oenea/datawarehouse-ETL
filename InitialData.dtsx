@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="InitialData"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{12F5BE13-656B-4FE3-B736-8BE3D1E81B53}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{38229109-128D-4EAC-A040-96AF26F4965E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -71,7 +71,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{40490F34-749C-4E0F-B589-D5A75AC360B3}"
-          SQLTask:SqlStatementSource="INSERT INTO Junk&#xA;             (status_, wasReturnedOnWarranty)&#xA;VALUES ('declined', 'yes'), ('declined', 'no'), ('accepted', 'yes'), ('accepted', 'no'), ('repaired', 'yes'), ('repaired', 'no')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="INSERT INTO Junk&#xA;             (status_, wasReturnedOnWarranty)&#xA;VALUES ('Pending', 'yes'), ('Pending', 'no'), ('In Progess', 'yes'), ('In Progress', 'no'), ('Completed', 'yes'), ('Completed', 'no'), ('Canceled', 'yes'), ('Canceled', 'no')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
