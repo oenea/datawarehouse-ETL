@@ -7,6 +7,6 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=DESKTOP-UIEI3E4;Initial Catalog=DataWarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{40490F34-749C-4E0F-B589-D5A75AC360B3}DESKTOP-MUDOC9U.DataWarehouse;" />
+      DTS:ConnectionString="Data Source=DESKTOP-02EFERQ;Initial Catalog=DataWarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{40490F34-749C-4E0F-B589-D5A75AC360B3}DESKTOP-MUDOC9U.DataWarehouse;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>

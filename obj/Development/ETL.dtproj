@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <DeploymentModel>Project</DeploymentModel>
-  <ProductVersion>16.0.5685.0</ProductVersion>
+  <ProductVersion>16.0.5467.0</ProductVersion>
   <SchemaVersion>9.0.1.0</SchemaVersion>
   <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
   <Database>
@@ -16,17 +16,17 @@
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{2a938234-407e-4458-b927-cfc6d3596849}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">ETL</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
           </SSIS:Property>
           <SSIS:Property SSIS:Name="CreationDate">2024-11-25T00:59:22.4470796-08:00</SSIS:Property>
-          <SSIS:Property SSIS:Name="CreatorName">DESKTOP-HVQR19C\oenea</SSIS:Property>
-          <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-HVQR19C</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreatorName">DESKTOP-02EFERQ\oenea</SSIS:Property>
+          <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-02EFERQ</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQnj6BIDslE2n8L9llASl4QAAAAACAAAAAAAQZgAAAAEAACAAAADMn4uVhweNkHdapJdJdaVwWxOmudruZ/jZ8xFRrZQ4AwAAAAAOgAAAAAIAACAAAACNVBTxw80LEWlxh6ChkB+m3O3tKeitHTRAHmtcRNLSt5AAAADPGES8+fue7G5Dl+6hCE0k9l4NBu2KJf7IYwb9/sb6mrvmjskkbZF2NBqfFbmMZw6st1uQ3G4vR4Wtgex8OeMFt9PLNvnG0Oe4nJ3qxHHSrzAJp0qawFHMBo5q1uJmVKCql5P+A5qM9lAADEsG/YCramvOrS2zEvJt5T6MHGPLVuCWmuTjPfbOlI7ZwYSoqmlAAAAANj4Zm9XH5Wg8mOHJ7sNXFHy8qz0gdvLcn96E3xtk1DwQ9oi8ynF3/u6xSNIRziLrQ6R455h8h/d93MTd7VyEaw==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAApK5BJk7bk0CKvaZx7c2ujwAAAAACAAAAAAAQZgAAAAEAACAAAABHrHw4SctvcJwA6cBAn3j8TKNPM2i7h8pojkwmqvH21gAAAAAOgAAAAAIAACAAAABq4e4V49ok0udC2mEbYE2iXxb3CmUH0CjSSD/oOxCArpAAAACmlUR5jPadQ43nconNzMAUT3zPIhr7aJnm5mmeriqbFOa+5c2YxNkZ4RcoQyyGvIddx3CcwMcBFvME4qjTOcG78WBIvASNPP/HvWxgfK/AmUbM3QrWTfW6GQSvPeydEt5WeK8C+lrSX+7eay3pCuGwqn63De7uCafx6kRUExOqe9UyaaY+vnZOyVP4irhpK4BAAAAAuqRJ1+FXxnZ18fnzXeVAg9VzKbTmnaal5OfL/goB+zTynBdcWTwAgQbS9PkDZiZxSOIhIO2f1FWUBoX4grBh8Q==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -66,7 +66,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-UIEI3E4;Initial Catalog=DataWarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{40490F34-749C-4E0F-B589-D5A75AC360B3}DESKTOP-MUDOC9U.DataWarehouse;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-02EFERQ;Initial Catalog=DataWarehouse;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{40490F34-749C-4E0F-B589-D5A75AC360B3}DESKTOP-MUDOC9U.DataWarehouse;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -170,7 +170,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">DESKTOP-UIEI3E4</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">DESKTOP-02EFERQ</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -214,7 +214,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-UIEI3E4;Initial Catalog=CompanyDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{47BA5DAD-527B-45BB-A4DB-FF7A6B1880AF}DESKTOP-MUDOC9U.CompanyDatabase;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-02EFERQ;Initial Catalog=CompanyDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-ETL-{47BA5DAD-527B-45BB-A4DB-FF7A6B1880AF}DESKTOP-MUDOC9U.CompanyDatabase;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -318,7 +318,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">DESKTOP-UIEI3E4</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">DESKTOP-02EFERQ</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -541,10 +541,10 @@
                 <SSIS:Property SSIS:Name="Name">InitialData</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">20</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">23</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{EA6C80E0-7087-41F9-B232-0EB6B64DD360}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{F700D578-45ED-49C1-B977-15234CFC83B5}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -577,7 +577,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\oenea\Downloads\ETL\date_seed.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Users\oenea\Downloads\datawarehouse-ETL\date_seed.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -649,10 +649,10 @@
                 <SSIS:Property SSIS:Name="Name">DeployData</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">149</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">152</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{FA75DA18-234D-4ED7-BEB6-B7DEFB8714CC}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{46E866A3-F12A-4676-A1D3-6410A5BFDB85}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -685,7 +685,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-UIEI3E4;Initial Catalog=CompanyDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-DeployData-{43D3AE1E-419B-4F7A-A478-AAB532240B38}DESKTOP-MUDOC9U.CompanyDatabase 1;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-02EFERQ;Initial Catalog=CompanyDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-DeployData-{43D3AE1E-419B-4F7A-A478-AAB532240B38}DESKTOP-MUDOC9U.CompanyDatabase 1;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -789,7 +789,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">DESKTOP-UIEI3E4</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">DESKTOP-02EFERQ</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

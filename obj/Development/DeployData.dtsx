@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-HVQR19C\oenea"
   DTS:DTSID="{51801052-3591-4CAB-A307-6408913FA4B9}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LastModifiedProductVersion="16.0.5467.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="DeployData"
   DTS:PackageType="5"
-  DTS:VersionBuild="149"
-  DTS:VersionGUID="{FA75DA18-234D-4ED7-BEB6-B7DEFB8714CC}">
+  DTS:VersionBuild="152"
+  DTS:VersionGUID="{46E866A3-F12A-4676-A1D3-6410A5BFDB85}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-UIEI3E4;Initial Catalog=CompanyDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-DeployData-{43D3AE1E-419B-4F7A-A478-AAB532240B38}DESKTOP-MUDOC9U.CompanyDatabase 1;" />
+          DTS:ConnectionString="Data Source=DESKTOP-02EFERQ;Initial Catalog=CompanyDatabase;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-DeployData-{43D3AE1E-419B-4F7A-A478-AAB532240B38}DESKTOP-MUDOC9U.CompanyDatabase 1;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -39,7 +39,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="DATE">
       <DTS:VariableValue
-        DTS:DataType="7">12/9/2024 3:41:55 AM</DTS:VariableValue>
+        DTS:DataType="7">12/16/2024 12:47:20 AM</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -7919,49 +7919,49 @@ where [refTable].[products_id] = ? and [refTable].[price] = ? and [refTable].[di
               startId="Package\Populate ProductsCatalogue\OLE DB Command.Outputs[OLE DB Command Output]" />
             <path
               refId="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output2]"
-              endId="Package\Populate ProductsCatalogue\Sort 3.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Populate ProductsCatalogue\OLE DB Source 2.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output]"
-              endId="Package\Populate ProductsCatalogue\Sort 4.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Populate ProductsCatalogue\OLE DB Source 1.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output1]"
               endId="Package\Populate ProductsCatalogue\Sort.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Populate ProductsCatalogue\OLE DB Source.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output]"
+              endId="Package\Populate ProductsCatalogue\Sort 3.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Populate ProductsCatalogue\OLE DB Source 2.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output1]"
+              endId="Package\Populate ProductsCatalogue\Sort 4.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Populate ProductsCatalogue\OLE DB Source 1.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Populate ProductsCatalogue.Paths[Sort Output5]"
+              endId="Package\Populate ProductsCatalogue\Merge Join 1.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Populate ProductsCatalogue\Sort 3.Outputs[Sort Output]" />
+            <path
+              refId="Package\Populate ProductsCatalogue.Paths[Sort Output]"
               endId="Package\Populate ProductsCatalogue\Sort 1.Inputs[Sort Input]"
               name="Sort Output"
               startId="Package\Populate ProductsCatalogue\Sort 4.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate ProductsCatalogue.Paths[Sort Output]"
+              refId="Package\Populate ProductsCatalogue.Paths[Sort Output1]"
               endId="Package\Populate ProductsCatalogue\Merge Join 1.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Populate ProductsCatalogue\Sort 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate ProductsCatalogue.Paths[Sort Output1]"
+              refId="Package\Populate ProductsCatalogue.Paths[Sort Output2]"
               endId="Package\Populate ProductsCatalogue\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Populate ProductsCatalogue\Sort 1.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate ProductsCatalogue.Paths[Sort Output2]"
+              refId="Package\Populate ProductsCatalogue.Paths[Sort Output3]"
               endId="Package\Populate ProductsCatalogue\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Populate ProductsCatalogue\Sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate ProductsCatalogue.Paths[Sort Output3]"
+              refId="Package\Populate ProductsCatalogue.Paths[Sort Output4]"
               endId="Package\Populate ProductsCatalogue\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
               name="Sort Output"
               startId="Package\Populate ProductsCatalogue\Sort 5.Outputs[Sort Output]" />
-            <path
-              refId="Package\Populate ProductsCatalogue.Paths[Sort Output4]"
-              endId="Package\Populate ProductsCatalogue\Merge Join 1.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Populate ProductsCatalogue\Sort 3.Outputs[Sort Output]" />
             <path
               refId="Package\Populate ProductsCatalogue.Paths[Union All Output 1]"
               endId="Package\Populate ProductsCatalogue\Derived Column 2.Inputs[Derived Column Input]"
@@ -11012,64 +11012,64 @@ where [refTable].[return_id] = ? and [refTable].[employee_id] = ?</property>
               startId="Package\Populate ReturnProcessing\Merge Join 3.Outputs[Merge Join Output]" />
             <path
               refId="Package\Populate ReturnProcessing.Paths[OLE DB Source Output4]"
-              endId="Package\Populate ReturnProcessing\Sort 2.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Populate ReturnProcessing\OLE DB Source 2.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Populate ReturnProcessing.Paths[OLE DB Source Output2]"
-              endId="Package\Populate ReturnProcessing\Sort 3.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Populate ReturnProcessing\OLE DB Source 3.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Populate ReturnProcessing.Paths[OLE DB Source Output3]"
-              endId="Package\Populate ReturnProcessing\Sort 4.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Populate ReturnProcessing\OLE DB Source 4.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Populate ReturnProcessing.Paths[OLE DB Source Output]"
-              endId="Package\Populate ReturnProcessing\Sort.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Populate ReturnProcessing\OLE DB Source.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Populate ReturnProcessing.Paths[OLE DB Source Output1]"
               endId="Package\Populate ReturnProcessing\Sort 1.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Populate ReturnProcessing\OLE DB Source 1.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Populate ReturnProcessing.Paths[OLE DB Source Output2]"
+              endId="Package\Populate ReturnProcessing\Sort 4.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Populate ReturnProcessing\OLE DB Source 4.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Populate ReturnProcessing.Paths[OLE DB Source Output3]"
+              endId="Package\Populate ReturnProcessing\Sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Populate ReturnProcessing\OLE DB Source.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Populate ReturnProcessing.Paths[OLE DB Source Output]"
+              endId="Package\Populate ReturnProcessing\Sort 2.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Populate ReturnProcessing\OLE DB Source 2.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Populate ReturnProcessing.Paths[OLE DB Source Output1]"
+              endId="Package\Populate ReturnProcessing\Sort 3.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Populate ReturnProcessing\OLE DB Source 3.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Populate ReturnProcessing.Paths[Sort Output6]"
+              endId="Package\Populate ReturnProcessing\Merge Join 2.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Populate ReturnProcessing\Sort 5.Outputs[Sort Output]" />
+            <path
+              refId="Package\Populate ReturnProcessing.Paths[Sort Output]"
               endId="Package\Populate ReturnProcessing\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Populate ReturnProcessing\Sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate ReturnProcessing.Paths[Sort Output]"
+              refId="Package\Populate ReturnProcessing.Paths[Sort Output1]"
               endId="Package\Populate ReturnProcessing\Merge Join 3.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Populate ReturnProcessing\Sort 6.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate ReturnProcessing.Paths[Sort Output1]"
+              refId="Package\Populate ReturnProcessing.Paths[Sort Output2]"
               endId="Package\Populate ReturnProcessing\Merge Join 1.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Populate ReturnProcessing\Sort 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate ReturnProcessing.Paths[Sort Output2]"
+              refId="Package\Populate ReturnProcessing.Paths[Sort Output3]"
               endId="Package\Populate ReturnProcessing\Merge Join 1.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Populate ReturnProcessing\Sort 3.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate ReturnProcessing.Paths[Sort Output3]"
+              refId="Package\Populate ReturnProcessing.Paths[Sort Output4]"
               endId="Package\Populate ReturnProcessing\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Populate ReturnProcessing\Sort 1.Outputs[Sort Output]" />
             <path
-              refId="Package\Populate ReturnProcessing.Paths[Sort Output4]"
+              refId="Package\Populate ReturnProcessing.Paths[Sort Output5]"
               endId="Package\Populate ReturnProcessing\Merge Join 2.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Populate ReturnProcessing\Sort 4.Outputs[Sort Output]" />
-            <path
-              refId="Package\Populate ReturnProcessing.Paths[Sort Output5]"
-              endId="Package\Populate ReturnProcessing\Merge Join 2.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Populate ReturnProcessing\Sort 5.Outputs[Sort Output]" />
             <path
               refId="Package\Populate ReturnProcessing.Paths[Sort Output7]"
               endId="Package\Populate ReturnProcessing\Merge Join 3.Inputs[Merge Join Right Input]"
@@ -12348,7 +12348,8 @@ where [refTable].[products_id] = ?</property>
                       refId="Package\Populate Returns\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[company_cost]"
                       dataType="numeric"
                       name="company_cost"
-                      precision="18" />
+                      precision="18"
+                      scale="2" />
                     <externalMetadataColumn
                       refId="Package\Populate Returns\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[processing_time_days]"
                       dataType="i4"
@@ -14272,24 +14273,24 @@ where [refTable].[products_id] = ?</property>
               startId="Package\Populate Returns\Merge Join.Outputs[Merge Join Output]" />
             <path
               refId="Package\Populate Returns.Paths[OLE DB Source Output3]"
-              endId="Package\Populate Returns\Sort 1.Inputs[Sort Input]"
+              endId="Package\Populate Returns\Sort.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Populate Returns\OLE DB Source 1.Outputs[OLE DB Source Output]" />
+              startId="Package\Populate Returns\OLE DB Source.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Populate Returns.Paths[OLE DB Source Output2]"
-              endId="Package\Populate Returns\Sort 7.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Populate Returns\OLE DB Source 4.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Populate Returns.Paths[OLE DB Source Output1]"
               endId="Package\Populate Returns\Sort 2.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Populate Returns\OLE DB Source 2.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Populate Returns.Paths[OLE DB Source Output]"
-              endId="Package\Populate Returns\Sort.Inputs[Sort Input]"
+              refId="Package\Populate Returns.Paths[OLE DB Source Output1]"
+              endId="Package\Populate Returns\Sort 7.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Populate Returns\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\Populate Returns\OLE DB Source 4.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Populate Returns.Paths[OLE DB Source Output]"
+              endId="Package\Populate Returns\Sort 1.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Populate Returns\OLE DB Source 1.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Populate Returns.Paths[Sort Output]"
               endId="Package\Populate Returns\Merge Join.Inputs[Merge Join Left Input]"
@@ -14380,27 +14381,27 @@ where [refTable].[products_id] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="177.333333333334,42.6666666666667"
+          Size="177,43"
           Id="Package\Populate Employees"
           TopLeft="686.5,607.5" />
         <NodeLayout
-          Size="154.666666666667,42"
+          Size="155,42"
           Id="Package\Populate Products"
           TopLeft="270.5,326.5" />
         <NodeLayout
-          Size="190.666666666667,42"
+          Size="191,42"
           Id="Package\Populate ProductSales"
           TopLeft="246.5,461.5" />
         <NodeLayout
-          Size="218.666666666667,42"
+          Size="219,42"
           Id="Package\Populate ProductsCatalogue"
           TopLeft="245.249997634441,161.249998663366" />
         <NodeLayout
-          Size="170.666666666667,66"
+          Size="171,66"
           Id="Package\Populate ReturnProcessing"
           TopLeft="551.5,747.5" />
         <NodeLayout
-          Size="177.333333333334,42"
+          Size="177,42"
           Id="Package\Populate Returns"
           TopLeft="257.5,604.5" />
         <EdgeLayout
@@ -14580,9 +14581,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-18.08349609375,41.4658203125,36.1669921875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14605,7 +14604,7 @@ where [refTable].[products_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-55.80638671875,37.4453125,156.8434765625,11.609375"
+              BoundingBox="-55.80638671875,37.4453125,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -14628,9 +14627,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-18.08349609375,33.9658203125,36.1669921875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -15632,7 +15629,7 @@ where [refTable].[products_id] = ?</property>
           Id="Package\Populate ProductsCatalogue\Derived Column"
           TopLeft="219.5,629.5" />
         <EdgeLayout
-          Id="Package\Populate ProductsCatalogue.Paths[Sort Output5]"
+          Id="Package\Populate ProductsCatalogue.Paths[Sort Output]"
           TopLeft="105.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15662,13 +15659,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-0.99265625,35,30.9853125,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ProductsCatalogue.Paths[Sort Output2]"
+          Id="Package\Populate ProductsCatalogue.Paths[Sort Output3]"
           TopLeft="298.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15698,13 +15693,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-14.3650282118056,40.5731225296443,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ProductsCatalogue.Paths[Sort Output1]"
+          Id="Package\Populate ProductsCatalogue.Paths[Sort Output2]"
           TopLeft="134.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15734,13 +15727,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="56.0628993055555,40.5731225296443,30.9853125,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ProductsCatalogue.Paths[Sort Output]"
+          Id="Package\Populate ProductsCatalogue.Paths[Sort Output1]"
           TopLeft="298.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15770,13 +15761,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-13.6428059895833,40.5988857938719,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ProductsCatalogue.Paths[Sort Output4]"
+          Id="Package\Populate ProductsCatalogue.Paths[Sort Output5]"
           TopLeft="129.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15806,13 +15795,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="57.8406770833333,40.5988857938719,30.9853125,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output]"
+          Id="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output1]"
           TopLeft="105.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15830,13 +15817,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.49265625,21.4658203125,30.9853125,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output1]"
+          Id="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output2]"
           TopLeft="298.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15854,13 +15839,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.80947265625,20.63818359375,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output2]"
+          Id="Package\Populate ProductsCatalogue.Paths[OLE DB Source Output]"
           TopLeft="88.5000000000001,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15890,9 +15873,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="5.00734375,35,30.9853125,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15914,9 +15895,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.80947265625,20.63818359375,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15938,9 +15917,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.80947265625,20.63818359375,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
@@ -15966,9 +15943,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.80947265625,20.6381835937499,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
@@ -15976,7 +15951,7 @@ where [refTable].[products_id] = ?</property>
           Id="Package\Populate ProductsCatalogue\Slowly Changing Dimension"
           TopLeft="192.5,834.166666666666" />
         <EdgeLayout
-          Id="Package\Populate ProductsCatalogue.Paths[Sort Output3]"
+          Id="Package\Populate ProductsCatalogue.Paths[Sort Output4]"
           TopLeft="298.5,774.166666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15994,9 +15969,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.80947265625,20.6381835937499,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
@@ -16101,7 +16074,7 @@ where [refTable].[products_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-47.1261827256945,162.150214592275,113.3634765625,11.609375"
+              BoundingBox="-17.5358311631945,162.150214592275,54.1827734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16162,9 +16135,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.80947265625,20.6381835937499,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
@@ -16190,9 +16161,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.80947265625,20.6381835937501,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
@@ -16261,6 +16230,71 @@ where [refTable].[products_id] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate ProductsCatalogue\Slowly Changing Dimension">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionID&gt;{40490F34-749C-4E0F-B589-D5A75AC360B3}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[ProductCatalogue]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[category]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;category&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[introduction_date]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;introduction_date&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[material_id]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;material_id&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[name_]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;name_&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[product_line]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;product_line&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 1&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 2&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn&gt;is_current&lt;/CurrentIndicatorColumn&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent&gt;True&lt;/ValueCurrent&gt;
+  &lt;ValueExpired&gt;False&lt;/ValueExpired&gt;
+  &lt;StartDateColumn /&gt;
+  &lt;EndDateColumn /&gt;
+  &lt;DateVariable /&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -16377,9 +16411,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-18.08349609375,28.0052939967105,36.1669921875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16402,7 +16434,7 @@ where [refTable].[products_id] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-85.39673828125,25.9453125,170.7934765625,11.609375"
+              BoundingBox="-55.80638671875,25.9453125,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16437,13 +16469,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-154.916829427084,28.0924351268143,36.1669921875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[Sort Output]"
+          Id="Package\Populate ReturnProcessing.Paths[Sort Output1]"
           TopLeft="432.5,862.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16473,13 +16503,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="108.238216145834,30.5125348189415,50.190234375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[Sort Output6]"
+          Id="Package\Populate ReturnProcessing.Paths[Sort Output]"
           TopLeft="413,345.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16509,13 +16537,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="47.1306770833335,84.444279346211,41.9053125,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[Sort Output5]"
+          Id="Package\Populate ReturnProcessing.Paths[Sort Output6]"
           TopLeft="576.5,607.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16545,13 +16571,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-84.7859895833335,75.6044568245125,41.9053125,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[Sort Output4]"
+          Id="Package\Populate ReturnProcessing.Paths[Sort Output5]"
           TopLeft="229.5,620.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16581,13 +16605,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="73.4048828125,58,50.190234375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[Sort Output3]"
+          Id="Package\Populate ReturnProcessing.Paths[Sort Output4]"
           TopLeft="697.5,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16617,13 +16639,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-74.2859895833335,79.701337295691,41.9053125,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[Sort Output2]"
+          Id="Package\Populate ReturnProcessing.Paths[Sort Output3]"
           TopLeft="1172.5,579.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16653,13 +16673,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-86.9168294270835,82.1309192200557,36.1669921875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[Sort Output1]"
+          Id="Package\Populate ReturnProcessing.Paths[Sort Output2]"
           TopLeft="883.5,574.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16689,13 +16707,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="35.2498372395835,85.0974930362117,36.1669921875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output]"
+          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output3]"
           TopLeft="412.5,205.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16713,13 +16729,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.80947265625,39.63818359375,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output2]"
+          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output1]"
           TopLeft="1172,428.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16737,13 +16751,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-18.08349609375,45.9658203125,36.1669921875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output1]"
+          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output4]"
           TopLeft="695,205.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16761,13 +16773,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-24.80947265625,43.63818359375,49.6189453125,11.2236328125"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output4]"
+          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output]"
           TopLeft="885,429.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16785,13 +16795,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-18.08349609375,42.9658203125,36.1669921875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output3]"
+          Id="Package\Populate ReturnProcessing.Paths[OLE DB Source Output2]"
           TopLeft="231.5,506.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -16809,9 +16817,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-25.0951171875,24.1357421875,50.190234375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16833,9 +16839,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-25.0951171875,18.6357421875,50.190234375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16857,9 +16861,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-20.95265625,13.4658203125,41.9053125,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16881,9 +16883,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-25.0951171875,16.6357421875,50.190234375,11.228515625"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17012,7 +17012,7 @@ where [refTable].[products_id] = ?</property>
           Id="Package\Populate Returns\Lookup 1"
           TopLeft="574.5,764.5" />
         <NodeLayout
-          Size="99,42"
+          Size="98.6666666666667,42"
           Id="Package\Populate Returns\Sort"
           TopLeft="376,147" />
         <NodeLayout
@@ -17020,11 +17020,11 @@ where [refTable].[products_id] = ?</property>
           Id="Package\Populate Returns\Sort 3"
           TopLeft="696,426" />
         <NodeLayout
-          Size="177,42"
+          Size="177.333333333334,42"
           Id="Package\Populate Returns\OLE DB Destination"
           TopLeft="638.5,1251.5" />
         <NodeLayout
-          Size="115,42"
+          Size="114.666666666667,42"
           Id="Package\Populate Returns\Lookup"
           TopLeft="664.5,1144.5" />
         <NodeLayout
@@ -17036,7 +17036,7 @@ where [refTable].[products_id] = ?</property>
           Id="Package\Populate Returns\OLE DB Source 1"
           TopLeft="694,26" />
         <NodeLayout
-          Size="157,42"
+          Size="157.333333333334,42"
           Id="Package\Populate Returns\OLE DB Source"
           TopLeft="349,21" />
         <NodeLayout
@@ -17044,11 +17044,11 @@ where [refTable].[products_id] = ?</property>
           Id="Package\Populate Returns\Sort 6"
           TopLeft="579.5,959.5" />
         <NodeLayout
-          Size="133,42"
+          Size="133.333333333334,42"
           Id="Package\Populate Returns\Merge Join"
           TopLeft="542,283" />
         <NodeLayout
-          Size="167,42"
+          Size="166.666666666667,42"
           Id="Package\Populate Returns\Derived Column 1"
           TopLeft="554.5,867.5" />
         <NodeLayout
@@ -17098,9 +17098,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17134,9 +17132,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17170,9 +17166,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17206,9 +17200,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17242,9 +17234,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17278,13 +17268,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Returns.Paths[OLE DB Source Output]"
+          Id="Package\Populate Returns.Paths[OLE DB Source Output3]"
           TopLeft="426.5,63">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -17302,13 +17290,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Returns.Paths[OLE DB Source Output1]"
+          Id="Package\Populate Returns.Paths[OLE DB Source Output2]"
           TopLeft="270.5,323">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -17326,13 +17312,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Returns.Paths[OLE DB Source Output2]"
+          Id="Package\Populate Returns.Paths[OLE DB Source Output1]"
           TopLeft="969,904.336565096953">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -17350,13 +17334,11 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Populate Returns.Paths[OLE DB Source Output3]"
+          Id="Package\Populate Returns.Paths[OLE DB Source Output]"
           TopLeft="778.5,68">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -17374,9 +17356,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17410,9 +17390,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17434,9 +17412,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17458,9 +17434,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17530,9 +17504,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17554,9 +17526,7 @@ where [refTable].[products_id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -17631,71 +17601,6 @@ where [refTable].[products_id] = ?</property>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Populate ProductsCatalogue\Slowly Changing Dimension">
-    <Properties>
-      <Property>
-        <Name>SCDMetadata</Name>
-        <Value
-          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SCDWizardMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
-  &lt;ConnectionID&gt;{40490F34-749C-4E0F-B589-D5A75AC360B3}&lt;/ConnectionID&gt;
-  &lt;TableName&gt;[dbo].[ProductCatalogue]&lt;/TableName&gt;
-  &lt;InputToColumnsCollection&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[category]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;category&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[introduction_date]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;introduction_date&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[material_id]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;material_id&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[name_]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;name_&lt;/ColumnName&gt;
-      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
-      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-    &lt;InputColumnToDBColumn&gt;
-      &lt;IdentificationString&gt;Sort 5.Outputs[Sort Output].Columns[product_line]&lt;/IdentificationString&gt;
-      &lt;ColumnName&gt;product_line&lt;/ColumnName&gt;
-      &lt;KeyType&gt;None&lt;/KeyType&gt;
-      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
-    &lt;/InputColumnToDBColumn&gt;
-  &lt;/InputToColumnsCollection&gt;
-  &lt;GeneratedComponentsIdentificationStrings&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 1&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 2&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
-    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command 1&lt;/anyType&gt;
-  &lt;/GeneratedComponentsIdentificationStrings&gt;
-  &lt;FailFixedAttribute&gt;true&lt;/FailFixedAttribute&gt;
-  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
-  &lt;UseStartEndDate&gt;false&lt;/UseStartEndDate&gt;
-  &lt;CurrentIndicatorColumn&gt;is_current&lt;/CurrentIndicatorColumn&gt;
-  &lt;InferredIndicatorColumn /&gt;
-  &lt;ValueCurrent&gt;True&lt;/ValueCurrent&gt;
-  &lt;ValueExpired&gt;False&lt;/ValueExpired&gt;
-  &lt;StartDateColumn /&gt;
-  &lt;EndDateColumn /&gt;
-  &lt;DateVariable /&gt;
-  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
-&lt;/SCDWizardMetadata&gt;</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

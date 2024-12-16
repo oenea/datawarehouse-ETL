@@ -21,7 +21,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="id"
-          DTS:DTSID="{7AD07915-7AAB-4B74-8E59-6A46CAAEAB6D}"
+          DTS:DTSID="{32BF93A4-DA99-4E21-A863-EE234E3192FD}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="product_id"
-          DTS:DTSID="{788AF0FE-FD57-45CE-8D8A-86C5395423BD}"
+          DTS:DTSID="{B3CFD601-907C-4674-A3F3-650112F78191}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="price"
-          DTS:DTSID="{36F6A320-F308-40A7-B8E7-DE08A70EEF88}"
+          DTS:DTSID="{34CB692F-361F-49DB-AC3A-F81A727EE6BE}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="discount_applied"
-          DTS:DTSID="{CAD6DC84-C162-440C-9C35-4E906BAF0D47}"
+          DTS:DTSID="{A7FF6BE7-CCCD-42FE-954B-9398EF3DF8C0}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="sale_date"
-          DTS:DTSID="{962526B4-9695-4D3E-975C-458D342A10DA}"
+          DTS:DTSID="{66D6480C-C4E4-4519-8FBF-B33E448BA68C}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>
